@@ -1,0 +1,13 @@
+{
+  "name": "防城港→贵州 国庆自驾游",
+  "short_name": "贵州自驾游",
+  "description": "防城港→贵州 国庆自驾游攻略：交互地图 + 行程 + 住宿 + 美食 + 景点路线",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#0D9488",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

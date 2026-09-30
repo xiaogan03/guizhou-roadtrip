@@ -6,6 +6,9 @@
 <meta name="format-detection" content="telephone=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0D9488">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
 <title>防城港 → 贵州 · 国庆自驾游</title>
 <link rel="stylesheet" href="leaflet/leaflet.css"/>
 <style>
@@ -338,6 +341,11 @@ function hideCard(){
 function resetView(){
   hideCard();
   map.fitBounds(ALL_BOUNDS, { padding:[40,40] });
+}
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('./sw.js').catch(function(){});
+  });
 }
 </script>
 </body>
